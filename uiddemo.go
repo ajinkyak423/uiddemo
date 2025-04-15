@@ -38,7 +38,7 @@ func New(ctx context.Context, next http.Handler, config *Config, name string) (h
 	// ...
 
 	if len(config.HeaderName) == 0 {
-		return nil, fmt.Errorf("no header name provided")
+		return nil, fmt.Errorf("no header name provided from dev branch")
 	}
 	return &UIDDemo{
 		next:       next,
