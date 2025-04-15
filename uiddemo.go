@@ -44,7 +44,7 @@ func New(ctx context.Context, next http.Handler, config *Config, name string) (h
 		next:       next,
 		headerName: config.HeaderName,
 		name:       name,
-		mystring    config.Mystring,
+		mystring:    config.Mystring,
 	}, nil
 }
 
